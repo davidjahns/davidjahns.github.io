@@ -1,3 +1,7 @@
+window.onload = $('head').append("<meta name='viewport' content='width=device-width, initial-scale=1'>");
+
+
+
 $(document).ready(
 
   function(){
@@ -44,6 +48,5 @@ $(document).ready(
     $('#home').removeClass('fadeOut hidden');
     $('#home').addClass('fadeIn');
   });
-
-  $('head').append("<meta name='viewport' content='width=device-width, initial-scale=1'>");
 });
+
