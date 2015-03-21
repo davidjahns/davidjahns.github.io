@@ -1,0 +1,467 @@
+* {
+  position: relative;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/**, *:before, *:after {-webkit-transform: translateZ(0);
+}*/
+
+a {
+  color: #2980B9;
+  text-decoration: none;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #3498DB;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: url('../img/mountain.jpg') center center fixed no-repeat;
+  color: #fff;
+}
+
+.back-button a {
+    font-size: 36px;
+}
+
+#home {
+    font-family: 'PT Mono', sans-serif;
+}
+
+#home h2 {
+    color: #ecf0f1;
+    padding-bottom: 1em;
+    margin-top: .5em;
+}
+
+#home .home-about {
+  padding-bottom: 30px;
+}
+
+#about,
+#work {
+    margin-top: 1em;
+}
+
+#about h2 {
+  padding-bottom: 20px;
+}
+
+#about .contact-list {
+    list-style: none;
+    font-size: 24px;
+}
+
+#about .contact-list span,
+#work .site-list span {
+    display: block;
+}
+
+#about .contact-list li {
+    display: inline-block;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.contact-list li a {
+  color: #ECF0F1;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+}
+
+.contact-list li a:hover {
+  color: #fff;
+}
+
+#work .site-list {
+    padding-top: 30px;
+}
+
+#work .site-list dd {
+    padding-bottom: 10px;
+}
+
+
+.container-fluid {
+  background: rgba(0,0,0,.55);
+  height: 100%;
+  padding-bottom: 30px;
+}
+
+.component {
+  font-family: 'Lato', Arial, sans-serif;
+  display:block;
+  margin-right auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.fixme {
+    position: fixed;
+}
+
+.component > h2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  /*font-family: 'PT Mono', sans-serif;*/
+  font-weight: 300;
+  font-style: italic;
+  font-size: 8em;
+  opacity: 0.1;
+  cursor: default;
+}
+
+.nav-button {
+  display: block;
+  margin-top: 5em;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 11;
+  width: 12.5em;
+  height: 12.5em;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  background-color: #ECF0F1;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.nav-button:hover {
+    background-color: #fff;
+}
+
+.nav-button:focus {
+    outline: none;
+}
+
+.csstransforms .nav-items {
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -300px;
+  width: 27em;
+  height: 27em;
+  border-radius: 50%;
+  background: transparent;
+  opacity: 0;
+  -webkit-transition: all .3s ease 0.3s;
+  -moz-transition: all .3s ease 0.3s;
+  transition: all .3s ease 0.3s;
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+  -moz-transform: scale(0.1);
+  transform: scale(0.1);
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/*cover to prevent extra space of anchors from being clickable*/
+.csstransforms .nav-items:after{
+  content:".";
+  display:block;
+  font-size:2em;
+  width:6.2em;
+  height:6.2em;
+  border-radius: 50%;
+  z-index:10;
+  color: transparent;
+}
+
+.csstransforms .opened-nav {
+  border-radius: 50%;
+  opacity: 1;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+.csstransforms .nav-items li {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  margin-top: -1.3em;
+  margin-left: -10em;
+  width: 10em;
+  height: 10em;
+  font-size: 1.5em;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+  -webkit-transform: rotate(255deg) skew(60deg);
+  -moz-transform: rotate(255deg) skew(60deg);
+  -ms-transform: rotate(255deg) skew(60deg);
+  transform: rotate(255deg) skew(60deg);
+  -webkit-transform-origin: 100% 100%;
+  -moz-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+  pointer-events: none;
+}
+
+.csstransforms .nav-items li a {
+  position: absolute;
+  right: -7.25em;
+  bottom: -7.25em;
+  display: block;
+  width: 14.5em;
+  height: 14.5em;
+  border-radius: 50%;
+  background: #ECF0F1;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  line-height: 2;
+  -webkit-transform: skew(-60deg) rotate(-75deg) scale(1) translateY(-5px);
+  -moz-transform: skew(-60deg) rotate(-75deg) scale(1) translateY(-5px);
+  -ms-transform: skew(-60deg) rotate(-75deg) scale(1) translateY(-5px);
+  transform: skew(-60deg) rotate(-75deg) scale(1) translateY(-5px);
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  pointer-events: auto;
+}
+
+.csstransforms .nav-items li a span {
+  position: relative;
+  top: 1.8em;
+  display: block;
+  font-size: .5em;
+  font-weight: 700;
+  -webkit-transform: rotate(180deg) scale(1);
+  -moz-transform: rotate(180deg) scale(1);
+  -ms-transform: rotate(180deg) scale(1);
+  transform: rotate(180deg) scale(1);
+  text-transform: uppercase;
+}
+
+.csstransforms .nav-items li a span.fa-linkedin {
+  -webkit-transform: rotate(90deg) scale(2);
+  -moz-transform: rotate(90deg) scale(2);
+  -ms-transform: rotate(90deg) scale(2);
+  transform: rotate(90deg) scale(2);
+}
+
+.csstransforms .nav-items li a span.fa-twitter {
+  -webkit-transform: rotate(120deg) scale(2);
+  -moz-transform: rotate(120deg) scale(2);
+  -ms-transform: rotate(120deg) scale(2);
+  transform: rotate(120deg) scale(2);
+}
+.csstransforms .nav-items li a span.fa-instagram {
+  -webkit-transform: rotate(-120deg) scale(2);
+  -moz-transform: rotate(-120deg) scale(2);
+  -ms-transform: rotate(-120deg) scale(2);
+  transform: rotate(-120deg) scale(2);
+}
+
+.csstransforms .nav-items li a span.fa-github {
+  -webkit-transform: rotate(-90deg) scale(2);
+  -moz-transform: rotate(-90deg) scale(2);
+  -ms-transform: rotate(-90deg) scale(2);
+  transform: rotate(-90deg) scale(2);
+}
+
+.csstransforms .nav-items li a:hover,
+.csstransforms .nav-items li a:active,
+.csstransforms .nav-items li a:focus {
+    background: #fff;
+  /*background: -webkit-radial-gradient(transparent 35%, #fff 35%);
+  background: -moz-radial-gradient(transparent 35%, #fff 35%);
+  background: radial-gradient(transparent 35%, #fff 35%);*/
+}
+.csstransforms .nav-items li a:focus {
+    position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
+}
+
+.csstransforms .opened-nav li {
+  -webkit-transition: all .3s ease .3s;
+  -moz-transition: all .3s ease .3s;
+  transition: all .3s ease .3s;
+}
+
+.csstransforms .opened-nav li:first-child {
+  -webkit-transform: rotate(350deg) skew(60deg);
+  -moz-transform: rotate(350deg) skew(60deg);
+  -ms-transform: rotate(350deg) skew(60deg);
+  transform: rotate(350deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(2) {
+  -webkit-transform: rotate(318deg) skew(60deg);
+  -moz-transform: rotate(318deg) skew(60deg);
+  -ms-transform: rotate(318deg) skew(60deg);
+  transform: rotate(318deg) skew(60deg);
+}
+
+.csstransforms .opened-nav  li:nth-child(3) {
+  -webkit-transform: rotate(286deg) skew(60deg);
+  -moz-transform: rotate(286deg) skew(60deg);
+  -ms-transform: rotate(286deg) skew(60deg);
+  transform: rotate(286deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(4) {
+  -webkit-transform: rotate(254deg) skew(60deg);
+  -moz-transform: rotate(254deg) skew(60deg);
+  -ms-transform: rotate(254deg) skew(60deg);
+  transform: rotate(254deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(5) {
+  -webkit-transform: rotate(222deg) skew(60deg);
+  -moz-transform: rotate(222deg) skew(60deg);
+  -ms-transform: rotate(222deg) skew(60deg);
+  transform: rotate(222deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(6) {
+  -webkit-transform: rotate(190deg) skew(60deg);
+  -moz-transform: rotate(190deg) skew(60deg);
+  -ms-transform: rotate(190deg) skew(60deg);
+  transform: rotate(190deg) skew(60deg);
+}
+
+.csstransforms .opened-nav li:nth-child(7) {
+  -webkit-transform: rotate(158deg) skew(60deg);
+  -moz-transform: rotate(158deg) skew(60deg);
+  -ms-transform: rotate(158deg) skew(60deg);
+  transform: rotate(158deg) skew(60deg);
+}
+
+.no-csstransforms .nav-items {
+  overflow: hidden;
+  margin: 10em auto;
+  padding: .5em;
+  text-align: center;
+}
+
+.no-csstransforms .nav-items ul {
+  display: inline-block;
+}
+
+.no-csstransforms .nav-items li {
+  float: left;
+  width: 5em;
+  height: 5em;
+  background-color: #ECF0F1;
+  text-align: center;
+  font-size: 1em;
+  line-height: 5em;
+}
+
+.no-csstransforms .nav-items li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  text-decoration: none;
+}
+
+.no-csstransforms .nav-items li a:hover,
+.no-csstransforms .nav-items li a:active,
+.no-csstransforms .nav-items li a:focus {
+  background-color: #f8f8f8;
+}
+
+.no-csstransforms .nav-items li.active a{
+  background-color: #6F325C;
+  color: #ECF0F1;
+}
+
+.no-csstransforms .nav-button {
+  display: none;
+}
+
+@media only screen and (max-width: 620px) {
+    body {
+        background: #000;
+        font-size: 16px;
+    }
+   .no-csstransforms li {
+     width: 4em;
+     height: 4em;
+     line-height: 4em;
+   }
+
+  .nav-button {
+    border: 5px solid #000;
+    box-shadow: none;
+    margin-top: 3em;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .no-ccstransforms .nav-items {
+    padding: .5em;
+  }
+
+  .no-csstransforms .nav-items li {
+    width: 4em;
+    height: 4em;
+    font-size: .9em;
+    line-height: 4em;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .csstransforms .nav-items {
+    font-size: .68em;
+    margin-top: -240px;
+  }
+
+  .nav-button {
+    font-size: 1em;
+  }
+
+  #home h2 {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width:420px) {
+  .no-csstransforms .nav-items li {
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+  }
+}
+
