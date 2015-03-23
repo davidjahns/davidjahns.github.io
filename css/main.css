@@ -298,10 +298,7 @@ body {
 .csstransforms .nav-items li a:hover,
 .csstransforms .nav-items li a:active,
 .csstransforms .nav-items li a:focus {
-    background: #fff;
-  /*background: -webkit-radial-gradient(transparent 35%, #fff 35%);
-  background: -moz-radial-gradient(transparent 35%, #fff 35%);
-  background: radial-gradient(transparent 35%, #fff 35%);*/
+    background: #fff; 
 }
 .csstransforms .nav-items li a:focus {
     position: fixed; /* fix the displacement bug in webkit browsers when using tab key */
@@ -405,6 +402,8 @@ body {
 .no-csstransforms .nav-button {
   display: none;
 }
+
+
 
 @media only screen and (max-width: 620px) {
     body {
