@@ -14,7 +14,7 @@ $(document).ready(
 
   $(button).on('click', button, function () {
      if(!open){
-      button.innerHTML = "<img class='img-responsive img-circle animated fadeIn' src='img/DavidJahnsCircle.jpg'>";
+      button.innerHTML = "<img class='img-responsive img-circle animated fadeIn' src='img/DavidJahnsCircle.png'>";
       $(navItems).addClass('opened-nav');
     }
     else{
