@@ -46,3 +46,7 @@ $(document).ready(
   });
 });
 
+$('#resume').click(function(){
+  alert('Please email imdavidjahns@gmail.com if you would like to view a resume.');
+});
+
